@@ -1,0 +1,7 @@
+sampleRate : 44100
+sampleLength : 4096
+freqRange : 707 - 1414
+Mic size : 0.05
+atmPressure : 1005.1
+temperature : 25.4
+Measure point interval : 0.1
