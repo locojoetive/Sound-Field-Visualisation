@@ -1,14 +1,13 @@
 # Sound Field Visualisation for HoloLens
 
-### 1. Origin
+## 1. Origin
 
 This project was a research project at the [Acoustic Lab](http://www.acoust.ias.sci.waseda.ac.jp/) at Waseda University in Tokyo.
 It extended on the research of [Kataoka et. al.](http://contents.acoust.ias.sci.waseda.ac.jp/publications/ACM/2018/SIGGRAPHASIA-kataoka-2018Dec.pdf) about [*Real-time Measurement and Display System of 3D Sound Intensity Map using Optical See-Through Head Mounted Display*](https://www.youtube.com/watch?v=xOXdfPGw3rA).
 
-With their help and by using their collected data I developed a pseudo algorithm, that localized a sound source and visualized the recorded sound in circular waves.
-The results are visualized [here](https://www.youtube.com/playlist?list=PL16zWJuXWCiwZhqUBcDZxl4h0IGznKrt-).
+By using the collected data I developed a pseudo algorithm, that localized a sound source and visualized the recorded sound in [circular waves](https://www.youtube.com/playlist?list=PL16zWJuXWCiwZhqUBcDZxl4h0IGznKrt-).
 
-## 1.1. Requirements
+### 1.1. Requirements
 
 Unity [VERSION]
 Holotoolkit [VERSION]
@@ -74,5 +73,5 @@ The result is a deformed sphere that represents the sound propagation.
 
 ### 5. Animation
 
-The deformed sphere's vertices are passed to a shader that generates a 2D plane.
+The deformed sphere's vertices are passed to the shader ```SineFragmentDisplacement.shader``` that generates a 2D plane.
 This plane then renders an intersection (Querschnitt) of the sphere and illustrates the sound propagation as wave impulses.
