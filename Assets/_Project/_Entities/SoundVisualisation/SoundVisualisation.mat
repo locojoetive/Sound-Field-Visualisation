@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PostEffectMaterial
+  m_Name: SoundVisualisation
   m_Shader: {fileID: 4800000, guid: 0274dbc949a95624e8730846ed84b16e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -64,21 +64,22 @@ Material:
     - _D: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Frequency: 1
+    - _Frequency: 4.21
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MaxPercentage: 0.352
+    - _MaxPercentage: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PhaseDisplacement: 50.6
-    - _RefDistortion: 4.7
+    - _RefDistortion: 1
     - _RefPow: 0
+    - _SegmentCount: 2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 1
+    - _Speed: 20
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1

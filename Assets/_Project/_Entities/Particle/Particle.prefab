@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5797032572284359965}
   - component: {fileID: 3046584286841249567}
   m_Layer: 0
-  m_Name: Cone
+  m_Name: Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,8 +91,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b98a8a4ecfe4d449458a84de14f5e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPosition: {x: 0, y: 0, z: 0}
   distance: 0.15
-  intensity: 8.41
+  amplitude: 0.005
   forward: 1
 --- !u!114 &3046584286841249567
 MonoBehaviour:
@@ -106,3 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00194af7381ef4c4a89701db5c760a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  intensityLevel: 0
+  intensity: {x: 0, y: 0, z: 0}
+  micRotation: {x: 0, y: 0, z: 0, w: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}

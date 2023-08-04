@@ -7,12 +7,12 @@ It extended on the research of [Kataoka et. al.](http://contents.acoust.ias.sci.
 
 By using the collected data I developed a pseudo algorithm, that localized a sound source and visualized the recorded sound in [circular waves](https://www.youtube.com/playlist?list=PL16zWJuXWCiwZhqUBcDZxl4h0IGznKrt-).
 
-### 1.1. Requirements
+### 1.1. Developed on
 
-Unity [VERSION]
-Holotoolkit [VERSION]
+Unity Editor 2018.4.36f1
+HoloToolkit 2017.4.3.0
 
-optional
+### 1.2. Developed for
 HoloLens 1
 
 ### 2. Pseudo Sound Source Localization

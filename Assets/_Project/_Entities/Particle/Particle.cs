@@ -28,8 +28,8 @@ public class Particle : MonoBehaviour
         setIntensityLevel();
         setColor();
         setMicRotation(rotation);
-        GetComponent<Move>().setPosition(position);
-        GetComponent<Move>().setDirection(intensity);
+        GetComponent<OscillateParticle>().setPosition(position);
+        GetComponent<OscillateParticle>().setDirection(intensity);
     }
 
 
@@ -52,7 +52,7 @@ public class Particle : MonoBehaviour
     private void setIntensityLevel()
     {
         intensityLevel = AcousticsMath.CalcuIntensityLevel(intensity);
-        GetComponent<Move>().setAmplitude(intensityLevel);
+        GetComponent<OscillateParticle>().setAmplitude(intensityLevel);
     }
     
     private void setColor()
