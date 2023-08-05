@@ -17,7 +17,7 @@ HoloLens 1
 
 ### 2. Pseudo Sound Source Localization
 
-For the following approach I assume that the recorded sound is coming from a single source, that each recorded data point is measuring the same sound (frequency and )
+For the following approach I assume that the recorded sound is coming from a single source, and that each recorded data point is measuring the same sound from a different position.
 Each recorded data point is classified as a Particle and has two relevant properties: direction and sound intensity.
 ```
 struct Particle {
@@ -61,7 +61,7 @@ The intensity vector is then updated by using the following steps:
 2. Calculating the angle ```α``` between ```direction``` and  ```particle.intensity``` 
 3. Adjust the new intensity level ```particle.intensity = ((180−α)/180) * particle.intensity```
 
-Hereby, I tried to consider (ausbügeln) that sound could be scattered, reflected, or refracted and adjust the particles intensity to the new ```center```.
+By adjusting the particles' intensity to the new ```center```, it is considered that sound could be scattered, reflected, or refracted.
 
 ### 4. Particle Displacement
 
@@ -71,7 +71,7 @@ The bigger the angle between a particle's intensity and its closest sphere verte
 The result is a deformed sphere that represents the sound propagation.
 
 
-### 5. Animation
+### 5. Shader
 
 The deformed sphere's vertices are passed to the shader ```SineFragmentDisplacement.shader``` that generates a 2D plane.
-This plane then renders an intersection (Querschnitt) of the sphere and illustrates the sound propagation as wave impulses.
+This plane then renders an intersection of the sphere and illustrates the sound propagation as wave impulses.
